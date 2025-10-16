@@ -1,18 +1,19 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-[#1a1a2e] text-white py-4 px-4 sm:px-6">
+    <header className="py-4 px-4 sm:px-6 absolute top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <span className="text-xl sm:text-2xl font-bold">Air</span>
-          <div className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-br from-[#10b981] to-[#3b82f6] rounded-sm flex items-center justify-center">
-            <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-            </svg>
-          </div>
-          <span className="text-xl sm:text-2xl font-bold">Gen</span>
+        <div className="flex items-center">
+          <Image
+            src="/images/logo.png"
+            alt="Air-Gen Logo"
+            width={140}
+            height={56}
+            className="h-11 w-auto"
+          />
         </div>
 
         {/* Navigation */}
@@ -32,7 +33,7 @@ const Header: React.FC = () => {
         </nav>
 
         {/* Contact Button */}
-        <button className="hidden sm:block bg-[#1a1a2e] border border-white text-white px-4 sm:px-6 py-2 rounded-lg hover:bg-white hover:text-[#1a1a2e] transition-colors text-sm sm:text-base">
+        <button className="hidden sm:block bg-transparent border border-white text-white px-4 sm:px-6 py-2 rounded-lg hover:bg-white hover:text-[#1a1a2e] transition-colors text-sm sm:text-base">
           Contact
         </button>
 

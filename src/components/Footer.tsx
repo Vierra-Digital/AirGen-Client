@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
@@ -7,14 +8,14 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Air-Gen Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <span className="text-2xl font-bold">Air</span>
-              <div className="w-6 h-6 bg-gradient-to-br from-[#10b981] to-[#3b82f6] rounded-sm flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                </svg>
-              </div>
-              <span className="text-2xl font-bold">Gen</span>
+            <div className="flex items-center">
+              <Image
+                src="/images/logo.png"
+                alt="Air-Gen Logo"
+                width={160}
+                height={60}
+                className="h-12 w-auto"
+              />
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
