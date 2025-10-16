@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
           <p className="text-lg sm:text-xl md:text-2xl text-white mb-8 leading-relaxed">
             Air-Gen turns the surrounding air into a limitless source of clean energy.
           </p>
-          <a href="#about" className="inline-block bg-[#1a1a2e] border border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-white hover:text-[#1a1a2e] transition-colors">
+          <a href="https://youtu.be/d8eZy4QUuGc?si=0dVCsFeusxRjx7Eh" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#1a1a2e] border border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-white hover:text-[#1a1a2e] transition-colors">
             Our Story
           </a>
         </div>
