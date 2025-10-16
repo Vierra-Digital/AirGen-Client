@@ -58,7 +58,7 @@ const NewsStories: React.FC = () => {
                   />
                 </div>
               </div>
-              <p className="text-[#374151] leading-relaxed text-center">"{item.quote}"</p>
+              <p className="text-[#374151] leading-relaxed text-center">&ldquo;{item.quote}&rdquo;</p>
             </div>
           ))}
         </div>
