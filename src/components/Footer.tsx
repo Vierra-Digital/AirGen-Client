@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#1a1a2e] text-white py-16">
+    <footer className="bg-[#1a1a2e] text-white py-12 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
           {/* Air-Gen Info */}
           <div className="space-y-4">
             <div className="flex items-center">
@@ -18,8 +18,8 @@ const Footer: React.FC = () => {
               />
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
-              <div className="space-y-2 text-[#9ca3af]">
+              <h3 className="text-base sm:text-lg font-semibold mb-3">Contact Us</h3>
+              <div className="space-y-2 text-sm sm:text-base text-[#9ca3af]">
                 <p>admin@air-gen.tech</p>
                 <p>+1 (555) 123-4567</p>
                 <p>San Francisco, CA</p>
@@ -29,30 +29,30 @@ const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Quick Links</h3>
             <div className="space-y-2">
-              <a href="#how-it-works" className="block text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">How It Works</a>
-              <a href="#news-stories" className="block text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">News Stories</a>
-              <a href="#team" className="block text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">Our Partners</a>
-              <a href="#about" className="block text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">About Us</a>
+              <a href="#how-it-works" className="block text-sm sm:text-base text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">How It Works</a>
+              <a href="#news-stories" className="block text-sm sm:text-base text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">News Stories</a>
+              <a href="#team" className="block text-sm sm:text-base text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">Our Partners</a>
+              <a href="#about" className="block text-sm sm:text-base text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">About Us</a>
             </div>
           </div>
 
           {/* Resources */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Resources</h3>
+            <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Resources</h3>
             <div className="space-y-2">
-              <a href="#" className="block text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">Research Papers</a>
-              <a href="#" className="block text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">Technology Overview</a>
-              <a href="#" className="block text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">FAQs</a>
-              <a href="#" className="block text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">Press Kit</a>
+              <a href="#" className="block text-sm sm:text-base text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">Research Papers</a>
+              <a href="#" className="block text-sm sm:text-base text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">Technology Overview</a>
+              <a href="#" className="block text-sm sm:text-base text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">FAQs</a>
+              <a href="#" className="block text-sm sm:text-base text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">Press Kit</a>
             </div>
           </div>
 
           {/* Follow Us & Newsletter */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             <div>
-              <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Follow Us</h3>
               <div className="flex space-x-3">
                 <a href="#" className="w-10 h-10 bg-[#374151] rounded-full flex items-center justify-center hover:bg-[#10b981] transition-colors cursor-pointer">
                   <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -73,15 +73,15 @@ const Footer: React.FC = () => {
             </div>
             
             <div>
-              <h3 className="text-lg font-semibold mb-3">Newsletter</h3>
-              <p className="text-[#9ca3af] text-sm mb-3">Stay updated on our latest developments</p>
+              <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">Newsletter</h3>
+              <p className="text-xs sm:text-sm text-[#9ca3af] mb-2 sm:mb-3">Stay updated on our latest developments</p>
               <div className="flex">
                 <input 
                   type="email" 
                   placeholder="Your email" 
-                  className="flex-1 px-3 py-2 bg-[#374151] text-white placeholder-[#9ca3af] rounded-l-lg border border-[#4b5563] focus:outline-none focus:border-[#10b981]"
+                  className="flex-1 px-2 sm:px-3 py-2 bg-[#374151] text-white placeholder-[#9ca3af] rounded-l-lg border border-[#4b5563] focus:outline-none focus:border-[#10b981] text-sm"
                 />
-                <button className="bg-[#1a1a2e] border border-white text-white px-4 py-2 rounded-r-lg hover:bg-white hover:text-[#1a1a2e] transition-colors">
+                <button className="bg-[#1a1a2e] border border-white text-white px-3 sm:px-4 py-2 rounded-r-lg hover:bg-white hover:text-[#1a1a2e] transition-colors text-sm sm:text-base">
                   Subscribe
                 </button>
               </div>
@@ -90,16 +90,16 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-[#374151] pt-8">
+        <div className="border-t border-[#374151] pt-6 sm:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-[#9ca3af] text-sm">©2025 Air-Gen. All rights reserved.</p>
-            <p className="text-[#9ca3af] text-sm">
+            <p className="text-[#9ca3af] text-xs sm:text-sm">©2025 Air-Gen. All rights reserved.</p>
+            <p className="text-[#9ca3af] text-xs sm:text-sm">
               Website Powered by <a href="https://vierradev.com" target="_blank" rel="noopener noreferrer" className="text-[#10b981] hover:text-white transition-colors">Vierra Digital</a>
             </p>
-            <div className="flex space-x-6">
-              <a href="#" className="text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300 text-sm">Privacy Policy</a>
-              <a href="#" className="text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300 text-sm">Terms of Service</a>
-              <a href="#" className="text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300 text-sm">Cookie Policy</a>
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
+              <a href="#" className="text-xs sm:text-sm text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">Privacy Policy</a>
+              <a href="#" className="text-xs sm:text-sm text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">Terms of Service</a>
+              <a href="#" className="text-xs sm:text-sm text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">Cookie Policy</a>
             </div>
           </div>
         </div>
