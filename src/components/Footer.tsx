@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
               <div className="space-y-2 text-sm sm:text-base text-[#9ca3af]">
                 <p>admin@air-gen.tech</p>
                 <p>+1 (555) 123-4567</p>
-                <p>San Francisco, CA</p>
+                <p>Amherst, MA</p>
               </div>
             </div>
           </div>
@@ -33,6 +33,7 @@ const Footer: React.FC = () => {
             <div className="space-y-2">
               <a href="#how-it-works" className="block text-sm sm:text-base text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">How It Works</a>
               <a href="#news-stories" className="block text-sm sm:text-base text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">News Stories</a>
+              <a href="#competitions" className="block text-sm sm:text-base text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">Competitions</a>
               <a href="#team" className="block text-sm sm:text-base text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">Our Partners</a>
               <a href="#about" className="block text-sm sm:text-base text-[#9ca3af] hover:text-white hover:underline underline-offset-4 transition-all duration-300">About Us</a>
             </div>
@@ -79,9 +80,9 @@ const Footer: React.FC = () => {
                 <input 
                   type="email" 
                   placeholder="Your email" 
-                  className="flex-1 px-2 sm:px-3 py-2 bg-[#374151] text-white placeholder-[#9ca3af] rounded-l-lg border border-[#4b5563] focus:outline-none focus:border-[#10b981] text-sm"
+                  className="flex-1 px-3 sm:px-3 py-3 bg-[#374151] text-white placeholder-[#9ca3af] rounded-l-lg border border-[#4b5563] focus:outline-none focus:border-[#10b981] text-sm min-h-[44px]"
                 />
-                <button className="bg-[#1a1a2e] border border-white text-white px-3 sm:px-4 py-2 rounded-r-lg hover:bg-white hover:text-[#1a1a2e] transition-colors text-sm sm:text-base">
+                <button className="bg-[#1a1a2e] border border-white text-white px-4 sm:px-5 py-3 rounded-r-lg hover:bg-white hover:text-[#1a1a2e] transition-colors text-sm sm:text-base touch-manipulation min-h-[44px]">
                   Subscribe
                 </button>
               </div>

@@ -23,6 +23,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -31,8 +32,57 @@ body {
   font-family: system-ui, -apple-system, sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* Prevent horizontal scrolling on mobile */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure touch targets are at least 44x44px for interactive elements */
+button:not([class*="min-h"]):not([class*="h-"]), 
+a:not([class*="min-h"]):not([class*="h-"]) {
+  min-height: 44px;
+}
+
+button, a {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Improve text readability on mobile */
+@media (max-width: 640px) {
+  body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Optimize animations for mobile performance */
+@media (max-width: 768px) {
+  /* Reduce transform complexity on mobile */
+  [class*="translate"],
+  [class*="scale"] {
+    will-change: auto;
+  }
 }
