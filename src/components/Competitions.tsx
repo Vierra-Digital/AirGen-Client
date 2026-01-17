@@ -71,11 +71,11 @@ const Competitions: React.FC = () => {
       type: "pitch"
     },
     {
-      title: "Hult Prize",
-      prize: "Winner",
-      date: "2025",
+      title: "Campus Hult Prize",
+      prize: "$5,000",
+      date: "November 2025",
       location: "UMass Amherst",
-      description: "The Air-Gen team secured victory in the prestigious Hult Prize competition, recognizing innovative solutions to global challenges. This achievement highlights our commitment to transforming renewable energy technology into viable entrepreneurial solutions that can make a positive impact worldwide.",
+      description: "The Air-Gen team secured victory in the Campus Hult Prize competition, recognizing innovative solutions to global challenges. This campus win qualifies us for the national competition and highlights our commitment to transforming renewable energy technology into viable entrepreneurial solutions that can make a positive impact worldwide.",
       link: null,
       image: "/images/team/IMG_0869.jpeg",
       type: "competition"
